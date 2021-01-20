@@ -1,0 +1,67 @@
+.work-section {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.timeline-item {
+  margin: 0 15px;
+  
+  @include above(md) {
+    margin: 0;
+  }
+}
+
+.timeline-content {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0,0,0,.5);
+  border-left: 3px solid $lightGreen;
+  margin-bottom: 10px;
+  text-align: left;
+
+  &:before {
+    @include timelineDot;
+    top: -15px;
+    left: -11px;
+  }
+
+  @include above(md) {
+    width: 50%;
+    text-align: right;
+    border-right: 2px solid $lightGreen;
+    border-left: 3px solid transparent;
+    margin-bottom: 0px;
+    
+    &:before {
+      background-color: transparent;
+    }
+
+    &:after {
+      @include timelineDot;
+      top: 0;
+      right: -11px;
+    }
+
+    .reverse & {
+      text-align: left;
+      border-right: 2px solid transparent;
+      border-left: 2px solid $lightGreen;
+
+      &:after {
+        right: auto;
+        left: -11px;
+      }
+    }
+  }
+
+  .reverse & {
+    margin-left: auto;
+  }
+
+  p {
+    margin: 0;
+  }
+}

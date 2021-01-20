@@ -1,0 +1,68 @@
+.navbar.bg-dark.transparent {
+  background-color: transparent !important;
+
+  .navbar-collapse {
+    background-color: #343a40 ;
+
+    @include above(md) {
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: 16px;
+  font-weight: 600;  
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255,255,255,.9);
+  
+  .navbar-expand-lg .navbar-nav & {
+    padding: 15px;
+
+    &.btn {
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+    }
+  }
+
+  i {
+    font-size: 21px;
+  }
+}
+
+.ddl-lang {
+  margin-right: 10px;
+
+  &.show > .btn-primary.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .btn-default {
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  .dropdown-menu {
+    width: 100px;
+    min-width: 100px;
+    left: auto;
+    right: 0;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,33 @@
+.btn {
+  width: max-content;
+  border-radius: 25px;
+  padding: 5px 15px;
+
+  .dropdown-menu & {
+    border-radius: 0;
+  }
+}
+
+.btn-resume {
+  background-color: $green;
+}
+
+.btn-lang {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+
+  img {
+    width: 40px;
+    height: 20px;
+  }
+  
+  .ddl-lang &.dropdown-toggle {
+    padding: 0;
+    margin-left: 10px;
+
+    &:after {
+      margin-left: 10px;
+    }
+  }
+}

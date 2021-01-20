@@ -1,0 +1,29 @@
+.banner {
+  min-height: 400px;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @include above(md) {
+    height: calc(100vh - 70px);
+    padding: 0;
+  }
+
+  .img-wrapper {
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+}
